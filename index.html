@@ -3,45 +3,158 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Minha Página Pessoal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal | Hugo Matheus</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f0f6ff;
+            color: #26384a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #123b65;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin: 0 0 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        nav {
+            background: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 8px #00000012;
+        }
+
+        nav a {
+            color: #1769aa;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px #123b6510;
+        }
+
+        h2 {
+            color: #1769aa;
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #1769aa;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background: #123b65;
+        }
+
+        footer {
+            text-align: center;
+            background: #123b65;
+            color: white;
+            padding: 20px;
+            margin-top: 35px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Olá! Meu nome é Hugo Matheus</h1>
-        <p>Sou estudante do curso Técnico em Informática para Internet.</p>
+        <h1>Olá, eu sou Hugo Matheus!</h1>
+        <p>Estudante de Informática para Internet</p>
     </header>
 
     <nav>
-        <h2>Navegação</h2>
-        <ul>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#hobbies">Meus hobbies</a></li>
-            <li><a href="sobre.html">Mais sobre mim</a></li>
-            <li><a href="https://www.google.com">Google</a></li>
-        </ul>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#estudos">Meus estudos</a>
+        <a href="#contato">Contato</a>
     </nav>
 
     <main>
         <section id="sobre">
             <h2>Sobre mim</h2>
-            <p>Meu nome é Hugo Matheus. Estou aprendendo sobre informática e quero desenvolver minhas habilidades em tecnologia e programação.</p>
-            <img src="imagens/minha-foto.jpg" alt="Foto pessoal de Hugo Matheus" width="250">
+            <p>
+                Seja bem-vindo à minha página pessoal!
+                Sou Hugo Matheus e estou construindo minha
+                jornada no mundo da tecnologia.
+            </p>
         </section>
 
-        <section id="hobbies">
-            <h2>Meus hobbies e interesses</h2>
-            <ul>
-                <li>Corrida</li>
-                <li>Conhecer novas tecnologias</li>
-                <li>Aprender coisas novas </li>
-            </ul>
+        <section id="estudos">
+            <h2>Meus estudos</h2>
+            <p>
+                Atualmente, estudo Técnico em Informática
+                para Internet no IF Sudeste MG.
+            </p>
+            <p>
+                Estou aprendendo HTML, desenvolvimento web
+                e novas ferramentas para criar páginas
+                bonitas e funcionais.
+            </p>
+        </section>
+
+        <section id="contato">
+            <h2>Vamos nos conectar?</h2>
+            <p>Visite meu perfil no Instagram!</p>
+            <a class="botao"
+               href="https://www.instagram.com/hugorsmatheus/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Meu Instagram
+            </a>
         </section>
     </main>
 
     <footer>
-        <p>Desenvolvido por Hugo Matheus.</p>
-        <p><a href="https://www.google.com">Visite o Google</a></p>
+        <p>Feito por Hugo Matheus • 2026</p>
     </footer>
 
 </body>
